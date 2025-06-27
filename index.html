@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Tools Suite - All-in-One Solution</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_PUBLISHER_ID" crossorigin="anonymous"></script>
     <style>
         * {
             margin: 0;
@@ -484,6 +486,59 @@
             color: inherit;
             text-decoration: none;
         }
+        
+        /* New styles for AdSense containers */
+        .ad-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px auto;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 1px solid #eaeaea;
+            max-width: 1200px;
+        }
+        
+        .ad-label {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .ad-responsive {
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        
+        .ad-leaderboard {
+            width: 728px;
+            height: 90px;
+        }
+        
+        .ad-banner {
+            width: 468px;
+            height: 60px;
+        }
+        
+        .ad-square {
+            width: 300px;
+            height: 250px;
+        }
+        
+        @media (max-width: 768px) {
+            .ad-leaderboard {
+                width: 320px;
+                height: 50px;
+            }
+            
+            .ad-banner {
+                width: 320px;
+                height: 50px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -510,23 +565,36 @@
             </nav>
         </header>
         
+        <!-- Top Ad Container (Leaderboard) -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Ad Unit -->
+            <ins class="adsbygoogle ad-responsive ad-leaderboard"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_LEADERBOARD_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
         <div class="tools-grid">
             <!-- Image Compression Tool -->
-		<div class="tool-card">
-    		<div class="tool-header">
-        	<div class="tool-icon">
-            	   <i class="fas fa-compress-alt"></i>
-        </div>
-        	<h3 class="tool-title">Image Compression</h3>
-    		</div>
-    		<div class="tool-body">
-        	<p class="tool-description">Reduce image file size without losing quality. Supports JPG, PNG, WebP formats.</p>
-        	<div class="tool-actions">
-            	<a href="/Tools/img-compress.html" class="btn btn-primary">
-                <i class="fas fa-play-circle"></i> Compress Now
-            	</a>
-        	
-		</button>
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">
+                        <i class="fas fa-compress-alt"></i>
+                    </div>
+                    <h3 class="tool-title">Image Compression</h3>
+                </div>
+                <div class="tool-body">
+                    <p class="tool-description">Reduce image file size without losing quality. Supports JPG, PNG, WebP formats.</p>
+                    <div class="tool-actions">
+                        <a href="/Tools/img-compress.html" class="btn btn-primary">
+                            <i class="fas fa-play-circle"></i> Compress Now
+                        </a>
                         <button class="btn btn-outline">
                             <i class="fas fa-info-circle"></i> Learn More
                         </button>
@@ -535,27 +603,25 @@
             </div>
             
             <!-- PDF Tools -->
-		<div class="tool-card">
-    		    <div class="tool-header">
-        		<div class="tool-icon">
-            		    <i class="fas fa-file-pdf"></i>
-        		</div>
-        		<h3 class="tool-title">PDF Tools</h3>
-    		</div>
-    		<div class="tool-body">
-        	   <p class="tool-description">Merge, split, convert, and edit PDF files with our comprehensive PDF toolkit.</p>
-        	   <div class="tool-actions">
-            	   <!-- Primary Button (Link to PDF Tools) -->
-            	   <a href="/Tools/Adv-pdf.html" class="btn btn-primary">
-                   <i class="fas fa-tools"></i> Use PDF Tools
-            	   </a>
-            <!-- Outline Button (Link to Learn More) -->
-            <a href="/Tools/Adv-pdf.html" class="btn btn-outline">
-                <i class="fas fa-info-circle"></i> Learn More
-            	   </a>
-        	</div>
-    		</div>
-		</div>
+            <div class="tool-card">
+                <div class="tool-header">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3 class="tool-title">PDF Tools</h3>
+                </div>
+                <div class="tool-body">
+                    <p class="tool-description">Merge, split, convert, and edit PDF files with our comprehensive PDF toolkit.</p>
+                    <div class="tool-actions">
+                        <a href="https://example.com/pdf-tools" class="btn btn-primary">
+                            <i class="fas fa-tools"></i> Use PDF Tools
+                        </a>
+                        <a href="https://example.com/pdf-tools-info" class="btn btn-outline">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
             
             <!-- PDF Security -->
             <div class="tool-card">
@@ -621,6 +687,21 @@
             </div>
         </div>
         
+        <!-- Middle Ad Container (Banner) -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Ad Unit -->
+            <ins class="adsbygoogle ad-responsive ad-banner"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_BANNER_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
         <div class="ad-banner">
             <h3 class="ad-title">Upgrade to Premium Tools</h3>
             <p class="ad-text">Get access to advanced features, unlimited file processing, and priority support with our premium plan.</p>
@@ -668,6 +749,21 @@
             </div>
         </div>
         
+        <!-- Bottom Ad Container (Square) -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Ad Unit -->
+            <ins class="adsbygoogle ad-responsive ad-square"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_SQUARE_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        
         <div class="testimonials">
             <h2 class="section-title">What Our Users Say</h2>
             <p class="section-subtitle">Thousands of professionals trust our tools for their document processing needs</p>
@@ -706,6 +802,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+        
+        <!-- Footer Ad Container (Responsive) -->
+        <div class="ad-container">
+            <div class="ad-label">Advertisement</div>
+            <!-- AdSense Ad Unit -->
+            <ins class="adsbygoogle ad-responsive"
+                 style="display:block"
+                 data-ad-client="ca-pub-YOUR_PUBLISHER_ID"
+                 data-ad-slot="YOUR_FOOTER_SLOT_ID"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
         
         <footer>
